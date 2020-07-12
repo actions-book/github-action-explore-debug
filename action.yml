@@ -1,0 +1,10 @@
+name: Explore Debug
+description: Show available data for any Action run
+runs:
+  using: docker
+  image: Dockerfile
+inputs:
+  jq_selector:
+    description: 'The JQ selector to execute'
+    required: false
+    default: "."
